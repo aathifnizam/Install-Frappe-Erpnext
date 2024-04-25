@@ -140,7 +140,7 @@ Now press (Ctrl-X) to exit
 **If its not working after STEP 13**
 
     bench new-site erp.syncbricks.com
-you can stop this by pressing ctr + c. Lest us install ERPNext and HRMS.
+*you can stop this by pressing ctr + c. Lest us install ERPNext and HRMS.*
 
 **Now you need to update the apps to the site**
 
