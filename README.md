@@ -136,18 +136,20 @@ STEP 15 install ERPNext latest version in bench & site
     bench --site dcode.com install-app erpnext
 
     bench start
-if its not working after STEP 14
+if its not working after STEP 13
 
-      bench get-app erpnext --branch version-15
-      bench get-app hrms --branch version-15
+    bench new-site erp.syncbricks.com
+you can stop this by pressing ctr + c. Lest us install ERPNext and HRMS.
 
 Now you need to update the apps to the site
 
-      bench get-app hrms --branch version-15
-      bench --site erp.yoursitename dcode.com install-app erpnext
-      bench --site erp.yoursitename dcode.com install-app hrms
+    bench get-app hrms --branch version-15
+    bench --site erp.syncbricks.com install-app erpnext
+    bench --site erp.syncbricks.com install-app hrms
 
-      bench use dcode.com
+Now you must tell the bench to use erp.syncbricks.com as default site you will use
+
+    bench use erp.syncbricks.com
 
       
     
