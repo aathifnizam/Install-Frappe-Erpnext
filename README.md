@@ -122,7 +122,7 @@ STEP 13 initilise the frappe bench & install frappe latest version
 	
 STEP 14 create a site in frappe bench
 
-    bench new-site dcode.com
+    bench yoursitename  dcode.com
 
     bench use dcode.com
 	
@@ -136,6 +136,21 @@ STEP 15 install ERPNext latest version in bench & site
     bench --site dcode.com install-app erpnext
 
     bench start
+if its not working after STEP 14
+
+      bench get-app erpnext --branch version-15
+      bench get-app hrms --branch version-15
+
+Now you need to update the apps to the site
+
+      bench get-app hrms --branch version-15
+      bench --site erp.yoursitename dcode.com install-app erpnext
+      bench --site erp.yoursitename dcode.com install-app hrms
+
+      bench use dcode.com
+
+      
+    
 
 
 
